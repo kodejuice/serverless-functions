@@ -1,8 +1,8 @@
 exports.handler = async function(event, context) {
-  // Do stuff here
+	const name = event.queryStringParameters.name;
 
   return {
-    body: "Hello world",
+    body: `Hello ${mame}`,
     statusCode: 200
   };
 };
